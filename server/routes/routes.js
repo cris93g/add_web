@@ -1,6 +1,6 @@
-const {} = require("../controllers/postControllers/postController");
+const { addItem } = require("../controllers/itemController/itemController");
 const {} = require("../controllers/userControllers/UserController");
 
 module.exports = app => {
-  app.get();
+  app.post(`/api/newItem`, addItem);
 };
